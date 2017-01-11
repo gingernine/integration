@@ -8,6 +8,4 @@ with open("C:\\Users\\User\\Documents\\Cpp\\integration\\lagroots.csv", mode='w'
         coef = [0]*(i+1)
         coef[i] = 1
         for r in lagroots(coef):
-            r = "{0:.40f}".format(r)
-            print(r)
-            writer.writerow([i,r])
+            writer.writerow([i,"{0:.40f}".format(r)])
